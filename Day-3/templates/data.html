@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+	<script type="text/javascript" href="{% static 'js/script.js'%}"></script>
+</head>
+<body>
+	<h5 style="padding: 3px;text-align: center; font-size: 50px; background-color: red; border-radius: 50px; border:dotted;">Mydetails</h5>
+	<h2 style="text-align: center;border-radius: 50px; border:solid;">This is inline CSS</h2>
+<h1 style="background-color: lightblue;border-radius: 50px; text-align: center;">My Name is <span style="color: red; background-color: lightgreen">{{name}} </span>My Age is <span style="color: blue;">{{age}}</span></h1>
+
+
+<p>External CSS</p>
+
+<h1 id="h">Welcome Django Classes </h1>
+</body>
+</html>
