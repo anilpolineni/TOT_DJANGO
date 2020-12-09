@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add</title>
+</head>
+<body>
+	
+	<form method="POST">
+		{% csrf_token %}
+		
+		num1:-<input type="text" name="num1"><br>
+		num2:-<input type="text" name="num2"><br>
+		<input type="submit" value="Sum">
+		<h1 style="color: red">All Arthematic Operations</h1>
+		<ol type="1">
+			<li>Addition of {{val1}} + {{val2}} = {{a}}</li>
+			<li>Substration of {{val1}} - {{val2}}={{s}}</li>
+			<li>Multiplication of {{val1}} * {{val2}} = {{m}}</li>
+			<li>Divisionof {{val1}} / {{val2}} = {{d}}</li>
+		</ol>
+	</form>	
+</body>
+</html>

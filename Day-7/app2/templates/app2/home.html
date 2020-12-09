@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container col-md-12 mt-4 card card-body" style="background-color: #00FF00;">
+    <h1 class="alert alert-success text-center">
+      <marquee behavior="alternate" scrollamount="10">SingleWebPage</marquee>
+    </h1>
+
+    <div class="row">
+
+      <div class="container col-md-4  card card-body border rounded shadow-lg " style="background-color: #DFFF00">
+        <h1 class="alert alert-info text-center">Login-Form</h1>
+        <form >
+          <strong>
+
+            <div class="form-group">
+              <label for="em">Email*</label>
+              <input type="email" name="" placeholder="Enter email" class="form-control" id="em">
+            </div>
+
+            <div class="form-group">
+              <label for="pd">Password*</label>
+              <input type="password" name="" placeholder="Enter ****" class="form-control" id="pd">
+            </div>
+          </strong>
+
+          <div class="text-center">
+            <input type="submit" value="Login" class="btn btn-outline-danger btn-lg">
+          </div>
+        </form>
+      </div>
+
+      <div class="container col-md-4 card card-body border rounded shadow-md" style="background-color: #FF5733;">
+
+        <h1 class="alert alert-warning text-center">Registration-Form</h1>
+        <form>
+          <strong>
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="fn">FirstName*</label>
+                <input type="text" name="" placeholder="Enter Fname" class="form-control" id="fn">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="ln">LastName*</label>
+                <input type="text" name="" placeholder="Enter Lname" class="form-control" id="ln">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="em">Email*</label>
+                <input type="email" name="" placeholder="Enter email" class="form-control" id="em">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="pd">Password*</label>
+                <input type="password" name="" placeholder="Enter ****" class="form-control" id="pd">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="db">Date*</label>
+                <input type="date" name="" placeholder="Enter dob" class="form-control" id="db">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="db">Select*</label>
+                 <select class="custom-select" required>
+                  <option>select Branch</option>
+                   <option value="CSE">CSE</option>
+                   <option value="ECE">ECE</option>
+                   <option value="EEE">EEE</option>
+                 </select>
+               </div>
+             </div>
+
+             <label for="validatedCustomFile">Image*</label>
+             <div class="custom-file ">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">TextArea</label>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </div>
+
+           <div class="form-row">
+
+            <div class="form-check-inline col-md-6">
+              <label for="gen">Gender*</label>
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Male
+                <input type="radio" class="form-check-input" name="optradio">Female
+              </label>
+            </div>
+
+             <label for="gen">Check*</label>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+               <label class="form-check-label" for="inlineCheckbox1">1</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+               <label class="form-check-label" for="inlineCheckbox1">2</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"disabled>
+               <label class="form-check-label" for="inlineCheckbox1">3</label>
+             </div>
+           </div>
+
+
+           <div class="form-group">
+             <label for="db">Progres*</label>
+             <div class="progress">
+               <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">0%</div>
+             </div><br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div><br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div><br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div><br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+          </div>
+          <label for="db">Spinner*</label>
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+            <div class="form-group row">
+              <label for="example-url-input" class="col-2 col-form-label">Search</label>
+              <div class="col-10">
+                <input class="form-control" type="search" value="" placeholder="Search Any thing here" id="example-search-input">
+              </div>
+            </div>
+         
+
+          <div class="form-group row">
+            <label for="example-url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+              <input class="form-control" type="url" value="" placeholder="https://getbootstrap.com" id="example-url-input">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+            <div class="col-10">
+              <input class="form-control" type="tel" value="" placeholder="+91 78216412812" id="example-tel-input">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="example-datetime-local-input" class="col-2 col-form-label">Date and time</label>
+            <div class="col-10">
+              <input class="form-control" type="datetime-local" value="" placeholder="2011-08-19T13:45:00" id="example-datetime-local-input">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Time</label>
+            <div class="col-10">
+              <input class="form-control" type="time" value="" placeholder="13:45:00" id="example-time-input">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Color</label>
+            <div class="col-10">
+              <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <input type="range" class="form-control-range" name="range">
+          </div>
+        </strong>
+
+
+
+          <div class="text-center">
+            <input type="submit" value="Register" class="btn btn-outline-primary btn-lg  shadow-md">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

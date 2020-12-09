@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <title>OPERATIONS</title>
+    <style type="text/css">
+      
+        .main{
+            width: 35%;
+            height: 300px;
+            background-color: rgba(7, 47, 79, 0.63);
+            margin: 50px 35%;
+            border-radius: 20px 20px 30px 30px;}
+        
+        .sub{
+            width: 20%;
+            margin: 15px 0 0 5%;
+            font-size: 16px;
+            height: 40px;
+            background-color: #031c30;
+            border: 1px solid rgb(17, 67, 107);
+            color: #fff;
+        }
+        .sub:hover{
+            background-color: magenta;
+            color: #fff;
+        }
+        h1{
+            border:solid;
+        }
+    </style>
+    <script>
+        function sum(){
+            var a = parseInt(document.getElementById('num1').value);
+            var b = parseInt(document.getElementById('num2').value);
+            // alert("Addition of"+a+ '+' +b+ '='+(a+b)+"\n"+"Substraction of " +num1+ '-'+num2+ '=' +(a-b)+"\n")
+
+            document.getElementById("res").innerText="Addition of"+a+ '+' +b+ '='+(a+b)+"\n"+"Substraction of " +a+ '-'+b+ '=' +(a-b)+"\n"+"Multiplication of " +a+ '*'+b+ '=' +(a*b)+"\n"+"Division of " +a+ '/'+b+ '=' +(a/b)+"\n"+"Power of " +a+ '**'+b+ '=' +(a**b)+"\n"+"Mod of " +a+ '%'+b+ '=' +(a%b)
+        }
+    </script>
+</head>
+<body>
+	
+<div class="warpper fl">
+	<div class="main">
+		<div class="head">
+			<p>ALL_Operations</p>
+		</div>
+		<div class="form fl">
+			<form>
+				<p class="name">Enter A Value* :</p>
+				<p><input type="text" placeholder="Enter A Value"  id="num1" class="name-inp"></p>
+
+				<p class="name">Enter B Value* :</p>
+				<p><input type="text" placeholder="Enter A Value" id="num2" class="name-inp"></p>
+
+                <p>
+                    <button type="button"   class="sub" onclick="sum();" >SUM</button>
+                </p>
+            </form>
+            <h2 class="name">Results :</h2>
+            <h1 id="res"></h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>

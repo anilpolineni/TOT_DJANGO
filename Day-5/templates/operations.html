@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    <title>OPERATIONS</title>
+    <style type="text/css">
+      
+        .main{
+            width: 35%;
+            height: 350px;
+            background-color: rgba(7, 47, 79, 0.63);
+            margin: 50px 35%;
+            border-radius: 20px 20px 30px 30px;}
+        
+        .sub{
+            width: 8%;
+            margin: 15px 0 0 5%;
+            font-size: 16px;
+            height: 40px;
+            background-color: #031c30;
+            border: 1px solid rgb(17, 67, 107);
+            color: #fff;
+        }
+        .sub:hover{
+            background-color: magenta;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+	
+<div class="warpper fl">
+	<div class="main">
+		<div class="head">
+			<p>Arthematic_Operations</p>
+		</div>
+		<div class="form fl">
+			<form name="myform">
+				<p class="name">Enter A Value* :</p>
+				<p><input type="text" placeholder="Enter A Value" name="num1" class="name-inp"></p>
+
+				<p class="name">Enter B Value* :</p>
+				<p><input type="text" placeholder="Enter A Value" name="num2" class="name-inp"></p>
+
+				<p>
+					<button type="button"   class="sub" onclick="add()" >Add</button>
+                	<button type="button" class="sub" onclick="sub()">Sub</button>
+                	<button type="button"  class="sub" onclick="mul()">Mul</button>
+                	<button type="button"  class="sub" onclick="div()">Div</button>
+                	<button type="button"  class="sub" disabled  onclick="floor()">Floor</button>
+                	<button type="button"  class="sub" onclick="pow()">Pow</button>
+                	<button type="button"  class="sub" onclick="mod()">Mod</button>
+
+
+				</p>
+
+				<p class="name">Result :</p>
+				<p>
+					<input type="text" disabled name="result" class="name-inp"  readonly>
+				</p>
+			</form>
+		</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	function add(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1+num2;
+		myform.result.value=result;
+		alert("Addition of"+num1+ '+'+num2+'=' +result);
+	}
+	function sub(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1-num2;
+		myform.result.value=result;
+		alert("Substraction of " +num1+ '-'+num2+ '=' +result);
+		
+	}
+	function mul(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1*num2;
+		myform.result.value=result;
+		alert(" Multiplaction  of " +num1+ '*'+num2+ '=' +result);
+		
+	}
+	function div(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1/num2;
+		myform.result.value=result;
+		alert("Division of " +num1+ '/' +num2+ '=' +result);
+		
+	}
+	function floor(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1//num2;
+		myform.result.value=result;
+		alert("Floor of " +num1+ '// '+num2+'=' +result);
+		
+	}
+	function pow(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1**num2;
+		myform.result.value=result;
+		alert("Power of " +num1+ '**' +num2+ '=' +result);
+		
+	}
+	function mod(){
+		num1=parseInt(myform.num1.value);
+		num2=parseInt(myform.num2.value);
+		result=num1%num2;
+		myform.result.value=result;
+		alert("Modules of " +num1+ '%' +num2+ '=' +result);
+		
+	}
+</script>
+</body>
+</html>
